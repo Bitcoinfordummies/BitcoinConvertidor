@@ -30,10 +30,19 @@ fetchCryptoRate();
 
 },[]);
 
+// Hook de efecto para actualizar el monto convertido cuando cambian el monto o la moneda seleccionada
+useEffect(()  => {
+if(cryptoRate[fiatCurrency.toLowerCase()]){
 
+setConvertedAmount(amount/cryptoRate[fiatCurrency.toLowerCase()]);
+}
+}, [amount, fiatCurrency,cryptoRate]);
 
+  // Manejador para actualizar el monto ingresado 
 
-
+  const handleAmountChange = (e) => {
+    setAmount(e.target.value);
+  };
 
 
 
