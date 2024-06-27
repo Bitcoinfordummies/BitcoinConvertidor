@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import './App.css';
 
 
 
@@ -61,8 +63,8 @@ setFiatCurrency(e.target.value);
 
 
 return(
-<div>
-<input type='number'/>
+<div class="container">
+<h2>Crypto Converter</h2>
 <div>
   <input type='number' value={amount} onChange={handleAmountChange} />
   <select value={fiatCurrency} onChange={handleCurrencyChange}>
