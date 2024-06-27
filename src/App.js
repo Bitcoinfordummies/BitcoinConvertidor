@@ -4,11 +4,9 @@ import BitcoinCurrency from './bitcoin';
 
 function App() {
   return (
-    <div className="container">
-      <header className="App-header">
-        <h1>Bitcoin Converter</h1> 
+    <div>
         <BitcoinCurrency />
-      </header>
+  
     </div>
   );
 }

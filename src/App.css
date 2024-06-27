@@ -1,5 +1,6 @@
 body{
-background-color: rgb(199, 122, 8);
+    margin: 0;
+    background-color: #03010f;
 
 }
 
@@ -10,4 +11,11 @@ text-align: center;
 
 
 
+} 
+
+.container{
+    background-color:  rgb(199, 122, 8);
+    max-width: 100%;
+    width: 200px;
+    text-align: center;
 }
