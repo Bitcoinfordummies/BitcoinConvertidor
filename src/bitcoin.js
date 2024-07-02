@@ -66,11 +66,13 @@ return(
 <div className="container">
 <h2>Bitcoin Converter</h2>
 <div>
-  <input type='number' value={amount} onChange={handleAmountChange} />
-  <select value={fiatCurrency} onChange={handleCurrencyChange}>
+<button value={fiatCurrency} onChange={handleCurrencyChange}>
     <option value='USD'>USD</option>
     <option value='EUR'>EUR</option>
-    </select>
+    
+    </button>
+  <input type='number' value={amount} onChange={handleAmountChange} />
+  
 </div>
 <h3>
   {amount} {fiatCurrency} = {convertedAmount.toFixed(6)} BTC
