@@ -63,8 +63,8 @@ setFiatCurrency(e.target.value);
 
 
 return(
-<div class="container">
-<h2>Crypto Converter</h2>
+<div className="container">
+<h2>Bitcoin Converter</h2>
 <div>
   <input type='number' value={amount} onChange={handleAmountChange} />
   <select value={fiatCurrency} onChange={handleCurrencyChange}>

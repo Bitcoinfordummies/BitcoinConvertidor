@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background-color: #03010f;
+    padding: 0;
+    background-color: #4d4d4d;
 
 }
 
@@ -15,7 +16,16 @@ text-align: center;
 
 .container{
     background-color:  rgb(199, 122, 8);
-    max-width: 100%;
     width: 200px;
-    text-align: center;
+    margin-left: 40%;    
 }
+
+
+
+@media only screen and (max-width: 425px) {
+    .container { 
+        width: 200px;
+        margin-left: 20%;   
+     }
+  
+    }
