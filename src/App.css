@@ -1,21 +1,38 @@
 body{
     margin: 0;
-    background-color: #03010f;
+    padding: 0;
+    background-color: #2b2929;
 
 }
 
 
-.App-header{
+.h2{
 
 text-align: center;
-
 
 
 } 
 
 .container{
     background-color:  rgb(199, 122, 8);
-    max-width: 100%;
-    width: 200px;
-    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-left: 40%;    
 }
+
+input{
+width: 100px;
+
+
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    .container { 
+        width: 200px;
+        margin-left: 20%;   
+     }
+  
+    }
