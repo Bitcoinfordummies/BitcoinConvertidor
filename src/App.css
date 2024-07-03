@@ -26,6 +26,89 @@ width: 100px;
 
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .exchange-controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .exchange-controls button {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .exchange-controls button.active {
+    background-color: #ff007f;
+  }
+  
+  .conversion-box {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .conversion-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .conversion-input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .conversion-input span {
+    align-self: center;
+  }
+  
+  .conversion-result {
+    font-size: 1.5em;
+  }
+  
+  .buy-button {
+    background-color: #ff007f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+
 
 
 
