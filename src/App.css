@@ -3,7 +3,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
-    color: white;
+    color: rgb(122, 120, 120);
     margin: 0;
     padding: 0;
     display: flex;
@@ -22,7 +22,7 @@ body {
   
   h2 {
     margin-bottom: 20px;
-    color: antiquewhite;
+    color: rgb(59, 45, 30);
   }
   
   .exchange-controls {
@@ -32,20 +32,20 @@ body {
   }
   
   .exchange-controls button {
-    background-color: #333;
+    background-color:rgb(199, 122, 8);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    color: white;
+    color: rgb(14, 13, 13);
     cursor: pointer;
   }
   
   .exchange-controls button.active {
-    background-color: #043117;
+    background-color: rgb(206, 129, 15);
   }
   
   .conversion-box {
-    background-color: #1f1e1e;
+    background-color: #0e0c0c;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -70,9 +70,22 @@ body {
   }
   
   .conversion-result {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   
+
+  .Footer a{
+
+
+   color: rgb(59, 45, 30);
+
+  } 
+  .Footer {
+
+
+    color: rgb(59, 45, 30);
+    
+      } 
  
   
 
@@ -84,6 +97,9 @@ body {
         width: 200px;
         margin-left: 5%;   
      }
+     .conversion-result {
+      font-size: 1.0em;
+    }
   
     }
 
@@ -91,6 +107,10 @@ body {
       .container { 
           width: 200px;
           margin-left: 5%;   
-       }
+       } 
+
+       .conversion-result {
+        font-size: 1.0em;
+      }
     
       }

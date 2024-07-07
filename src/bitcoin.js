@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import Footer from './footer';
 
 const BitcoinCurrency = () => {
   // Estado para almacenar la tasa de conversión
@@ -42,7 +43,7 @@ const BitcoinCurrency = () => {
 
   return (
     <div className="container">
-      <h2>Bitcoin Exchange</h2>
+      <h2>Dumb Bitcoin ₿</h2>
       <div className="exchange-controls">
       
         <button className={fiatCurrency   === 'EUR' ? 'active' : ''} onClick={() => setFiatCurrency('EUR')}>EUR</button>
@@ -57,7 +58,11 @@ const BitcoinCurrency = () => {
         {amount} {fiatCurrency} = {convertedAmount.toFixed(6)} BTC
         </div>
       </div>
+   <div className='Footer'>
+      <Footer />
+      </div>
     </div>
+    
   );
 };
 
