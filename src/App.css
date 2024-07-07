@@ -1,25 +1,5 @@
 
 
-.h2{
-
-text-align: center;
-
-
-} 
-
-.container{
-    background-color:  rgb(199, 122, 8);
-    width: 300px;
-    height: 300px;
-    margin-left: 40%;    
-}
-
-input{
-width: 100px;
-
-
-}
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
@@ -106,3 +86,11 @@ body {
      }
   
     }
+
+    @media screen and (max-width: 768px) {
+      .container { 
+          width: 200px;
+          margin-left: 5%;   
+       }
+    
+      }
