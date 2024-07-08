@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import Footer from './footer';
 
 const BitcoinCurrency = () => {
   // Estado para almacenar la tasa de conversión
@@ -38,17 +39,15 @@ const BitcoinCurrency = () => {
     setAmount(e.target.value);
   };
 
-  // Manejador para actualizar la moneda seleccionada
-  const handleCurrencyChange = (e) => {
-    setFiatCurrency(e.target.value);
-  };
+
 
   return (
     <div className="container">
-      <h2>Currency Exchange</h2>
+      <h2>Dumb Bitcoin ₿</h2>
       <div className="exchange-controls">
-        <button className={fiatCurrency === 'BTC' ? 'active' : ''} onClick={() => setFiatCurrency('BTC')}>BTC</button>
-        <button className={fiatCurrency === 'USD' ? 'active' : ''} onClick={() => setFiatCurrency('USD')}>USD</button>
+      
+        <button className={fiatCurrency   === 'EUR' ? 'active' : ''} onClick={() => setFiatCurrency('EUR')}>EUR</button>
+        <button className={fiatCurrency  === 'USD' ? 'active' : ''} onClick={() => setFiatCurrency('USD')}>USD</button>
       </div>
       <div className="conversion-box">
         <div className="conversion-input">
@@ -56,11 +55,14 @@ const BitcoinCurrency = () => {
           <span>{fiatCurrency}</span>
         </div>
         <div className="conversion-result">
-          {convertedAmount.toFixed(6)} BTC
+        {amount} {fiatCurrency} = {convertedAmount.toFixed(6)} BTC
         </div>
       </div>
-      <button className="buy-button">Buy</button>
+   <div className='Footer'>
+      <Footer />
+      </div>
     </div>
+    
   );
 };
 

@@ -1,35 +1,9 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #2b2929;
 
-}
-
-
-.h2{
-
-text-align: center;
-
-
-} 
-
-.container{
-    background-color:  rgb(199, 122, 8);
-    width: 300px;
-    height: 300px;
-    margin-left: 40%;    
-}
-
-input{
-width: 100px;
-
-
-}
 
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
-    color: white;
+    color: rgb(122, 120, 120);
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,7 +13,7 @@ body {
   }
   
   .container {
-    background-color: #1e1e1e;
+    background-color:  rgb(199, 122, 8);
     border-radius: 10px;
     padding: 20px;
     width: 300px;
@@ -48,6 +22,7 @@ body {
   
   h2 {
     margin-bottom: 20px;
+    color: rgb(59, 45, 30);
   }
   
   .exchange-controls {
@@ -57,20 +32,20 @@ body {
   }
   
   .exchange-controls button {
-    background-color: #333;
+    background-color:rgb(199, 122, 8);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    color: white;
+    color: rgb(14, 13, 13);
     cursor: pointer;
   }
   
   .exchange-controls button.active {
-    background-color: #ff007f;
+    background-color: rgb(206, 129, 15);
   }
   
   .conversion-box {
-    background-color: #2c2c2c;
+    background-color: #0e0c0c;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -95,27 +70,47 @@ body {
   }
   
   .conversion-result {
-    font-size: 1.5em;
-  }
-  
-  .buy-button {
-    background-color: #ff007f;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    width: 100%;
+    font-size: 1.2em;
   }
   
 
+  .Footer a{
+
+
+   color: rgb(59, 45, 30);
+
+  } 
+  .Footer {
+
+
+    color: rgb(59, 45, 30);
+    
+      } 
+ 
+  
 
 
 
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 320px) {
     .container { 
         width: 200px;
-        margin-left: 20%;   
+        margin-left: 5%;   
      }
+     .conversion-result {
+      font-size: 1.0em;
+    }
   
     }
+
+    @media screen and (max-width: 768px) {
+      .container { 
+          width: 200px;
+          margin-left: 5%;   
+       } 
+
+       .conversion-result {
+        font-size: 1.0em;
+      }
+    
+      }
